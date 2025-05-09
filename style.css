@@ -1,101 +1,80 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Arreat Codex</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap');
 
-    body {
-      margin: 0;
-      background: url('https://www.angelfire.lycos.com/realm3/arreat/images/bkg.jpg') repeat;
-      color: #f1d79e;
-      font-family: 'IM Fell English', serif;
-      display: flex;
-      flex-direction: row;
-    }
+body {
+  margin: 0;
+  background: url('https://www.angelfire.lycos.com/realm3/arreat/images/bkg.jpg') repeat;
+  color: #f1d79e;
+  font-family: 'IM Fell English', serif;
+  display: flex;
+  flex-direction: row;
+}
 
-    .sidebar {
-      width: 200px;
-      background: rgba(0, 0, 0, 0.85);
-      border-right: 2px solid #b79762;
-      padding: 20px;
-      height: 100vh;
-      box-shadow: inset -2px 0 5px #000;
-    }
+.sidebar {
+  width: 200px;
+  background: rgba(0, 0, 0, 0.85);
+  border-right: 2px solid #b79762;
+  padding: 20px;
+  height: 100vh;
+  box-shadow: inset -2px 0 5px #000;
+}
 
-    .sidebar h2 {
-      color: #e7c779;
-      font-size: 1.2rem;
-      margin-top: 0;
-      border-bottom: 1px solid #b79762;
-      padding-bottom: 5px;
-    }
+.sidebar h2 {
+  color: #e7c779;
+  font-size: 1.2rem;
+  margin-top: 0;
+  border-bottom: 1px solid #b79762;
+  padding-bottom: 5px;
+}
 
-    .sidebar a {
-      display: block;
-      color: #f1d79e;
-      text-decoration: none;
-      margin: 10px 0;
-      font-weight: bold;
-    }
+.sidebar a {
+  display: flex;
+  align-items: center;
+  color: #f1d79e;
+  text-decoration: none;
+  margin: 10px 0;
+  font-weight: bold;
+}
 
-    .sidebar a:hover {
-      text-decoration: underline;
-      color: #fff8d0;
-    }
+.sidebar a img {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
 
-    .content {
-      flex: 1;
-      padding: 20px;
-      background: rgba(0, 0, 0, 0.8);
-      border-left: 2px solid #b79762;
-      box-shadow: 0 0 20px #000 inset;
-    }
+.sidebar a:hover {
+  text-decoration: underline;
+  color: #fff8d0;
+}
 
-    header h1 {
-      font-size: 2rem;
-      margin: 0 0 20px;
-      color: #e7c779;
-      text-shadow: 1px 1px 5px #000;
-    }
+.content {
+  flex: 1;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  border-left: 2px solid #b79762;
+  box-shadow: 0 0 20px #000 inset;
+  border-image: url('https://diablo2.purediablo.com/images/borders/gold-border-top.png') 30 stretch;
+}
 
-    main h2 {
-      color: #e7c779;
-      margin-top: 0;
-    }
+header h1 {
+  font-size: 2rem;
+  margin: 0 0 20px;
+  color: #e7c779;
+  text-shadow: 1px 1px 5px #000;
+  border-bottom: 2px solid #b79762;
+  padding-bottom: 10px;
+}
 
-    footer {
-      text-align: center;
-      font-size: 0.8rem;
-      margin-top: 40px;
-      border-top: 1px solid #b79762;
-      padding-top: 10px;
-    }
-  </style>
-</head>
-<body>
-  <div class="sidebar">
-    <h2>Navigation</h2>
-    <a href="#">Home</a>
-    <a href="#">Items</a>
-    <a href="#">Skills</a>
-    <a href="#">Runes</a>
-    <a href="#">Horadric Lore</a>
-  </div>
-  <div class="content">
-    <header>
-      <h1>The Arreat Codex</h1>
-    </header>
-    <main>
-      <h2>Welcome, Wanderer</h2>
-      <p>This is your gateway to the ancient knowledge of Sanctuary. Browse the pages to uncover the secrets of power, magic, and destiny.</p>
-    </main>
-    <footer>
-      <p>Not affiliated with Blizzard Entertainment. Inspired by Arreat Summit.</p>
-    </footer>
-  </div>
-</body>
-</html>
+main h2 {
+  color: #e7c779;
+  margin-top: 0;
+  border-bottom: 1px solid #b79762;
+  padding-bottom: 5px;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 40px;
+  border-top: 1px solid #b79762;
+  padding-top: 10px;
+}
